@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Elastic Sidebar Menu</title>
+		<link rel="stylesheet" href="normalize.css">
+		<link rel="stylesheet" href="sidebar.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+		<style>
+			body {
+				background-color: #CC6666;
+				padding-bottom: 200vh;
+			}
+
+			.intro {
+				text-align: center;
+				font-family: 'Lato';
+			}
+
+			.intro h1 {
+				font-family: 'Sansita';
+			}
+
+			.black {
+				color: black;
+			}
+		</style>
+
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-71954823-9', 'auto');
+		  ga('send', 'pageview');
+		</script>
+	</head>
+	<body>
+		<div id="sidebar" class="active">
+		  <div id="toggleSidebar" class="fa fa-bars fa-1x"></div>
+			<ul>
+				<li><a>
+		      <i class="fa fa-home fa-2x" aria-hidden="true"></i>
+		      <span>HOME</span>
+		      </a></li>
+				<li>
+					<i class="fa fa-user fa-2x" aria-hidden="true"></i>
+					<span>BIO</span>
+				</li>
+				<li>
+					<i class="fa fa-star fa-2x" aria-hidden="true"></i>
+					<span>PORTFOLIO</span>
+				</li>
+				<li>
+					<i class="fa fa-file-text-o fa-2x" aria-hidden="true"></i>
+					<span>CV</span>
+				</li>
+				<li>
+					<i class="fa fa-paper-plane-o fa-2x" aria-hidden="true"></i>
+					<span>CONTACT</span>
+				</li>
+			</ul>
+		</div>
+
+		<div class="intro">
+		  <h1>
+		    Elastic Sidebar Menu
+		  </h1>
+		  <p>
+		    Original pen by <a href="http://codepen.io/violelune/pen/QdWwEy">Daniela</a>.
+				<br />
+				Original fork can be viewed <a href="http://codepen.io/KyoZeus/pen/JEVjpb">here</a>.
+			</p>
+		  <p>
+		    #sidebar is controlled by the 'active' class.
+		  </p>
+		  <p>
+		    JavaScript event handled on menu click to add and remove active class.
+		  </p>
+		   <a class="black" href="https://github.com/FranciscoKnebel/ElasticSidebar" target="_blank">
+		    <i class="fa fa-github fa-3x"></i>
+		  </a>
+		</div>
+
+		<script src="sidebar.js" charset="utf-8"></script>
+	</body>
+</html>
