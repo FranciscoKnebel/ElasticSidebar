@@ -1,7 +1,0 @@
-@each $current-color in $em-list-bg {
-	$i: index($em-list-bg, $current-color);
-
-	&:nth-of-type(#{$i})  {
-		background-color: $current-color;
-	}
-}

@@ -63,6 +63,8 @@
 	transition: all 0.75s cubic-bezier(0.87, -0.31, 0.18, 1.08);
 	border-width: 0 1px 0 0;
 	border-style: solid;
+	border-color: #FFB7C5;
+	background-color: #9C2542;
 	color: #FFB7C5;
 	list-style: none;
 	text-align: center;
@@ -76,6 +78,11 @@
 
 .em-sidebar ul>li:last-child {
 	border-width: 0 1px 1px 0;
+}
+
+.em-sidebar ul>li a {
+	color: #FFB7C5;
+	text-decoration: none;
 }
 
 .em-sidebar ul>li span {
@@ -122,15 +129,35 @@
 }
 
 .em-sidebar ul>li:nth-of-type(3) {
-	background-color: #9F4576;
+	background-color: #952108;
 }
 
 .em-sidebar ul>li:nth-of-type(4) {
-	background-color: #9C2542;
+	background-color: #362865;
 }
 
 .em-sidebar ul>li:nth-of-type(5) {
+	background-color: #9C2542;
+}
+
+.em-sidebar ul>li:nth-of-type(6) {
 	background-color: #0A7E8C;
+}
+
+.em-sidebar ul>li:nth-of-type(7) {
+	background-color: #9F4576;
+}
+
+.em-sidebar ul>li:nth-of-type(8) {
+	background-color: #39A879;
+}
+
+.em-sidebar ul>li:nth-of-type(9) {
+	background-color: #712F2C;
+}
+
+.em-sidebar ul>li:nth-of-type(10) {
+	background-color: #1A1FC6;
 }
 
 @media (max-width: 768px) {

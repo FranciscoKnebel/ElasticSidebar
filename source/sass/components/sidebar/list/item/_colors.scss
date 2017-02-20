@@ -1,0 +1,31 @@
+// Checks if color variables are lists. If not, will just use the fallback value.
+
+@each $current-color in $em-list-background {
+	@if type-of($em-list-background) == 'list' {
+		$i: index($em-list-background, $current-color);
+
+		&:nth-of-type(#{$i})  {
+			background-color: $current-color;
+		}
+	}
+}
+
+@each $current-color in $em-list-color {
+	@if type-of($em-list-color) == 'list' {
+		$i: index($em-list-color, $current-color);
+
+		&:nth-of-type(#{$i})  {
+			color: $current-color;
+		}
+	}
+}
+
+@each $current-color in $em-list-border {
+	@if type-of($em-list-border) == 'list' {
+		$i: index($em-list-border, $current-color);
+
+		&:nth-of-type(#{$i})  {
+			border-color: $current-color;
+		}
+	}
+}

@@ -9,7 +9,9 @@
 	transition: all .75s cubic-bezier(.87, -.31, .18, 1.08);
 	border-width: 0 1px 0 0;
 	border-style: solid;
-	color: $em-list-color;
+	border-color: $em-list-border-fallback;
+	background-color: $em-list-background-fallback;
+	color: $em-list-color-fallback;
 	list-style: none;
 
 	text-align: center;
@@ -24,8 +26,9 @@
 		border-width: 0 1px 1px 0;
 	}
 
+	@import 'item/_anchor';
 	@import 'item/_span';
 	@import 'item/_hover';
-	@import 'item/_background';
+	@import 'item/_colors';
 	@import 'item/_media';
 }
