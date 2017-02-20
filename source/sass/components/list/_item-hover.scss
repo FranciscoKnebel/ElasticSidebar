@@ -1,0 +1,16 @@
+&:hover {
+	width: 14em;
+	border-radius: 0 3em 3em 0;
+	opacity: 1;
+
+	&:hover span {
+		left: 0;
+		visibility: visible;
+		opacity: 1;
+		transition: visibility 0.75s, opacity 1s cubic-bezier(0.42, 0, 0, 1), left .5s ease-in-out;
+	}
+
+	@include media("<=tablet") {
+		width: 12em;
+	}
+}

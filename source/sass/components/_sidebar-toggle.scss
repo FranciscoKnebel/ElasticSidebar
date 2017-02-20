@@ -1,0 +1,15 @@
+.em-toggle {
+  z-index: 2;
+  padding: 1em;
+  text-align: center;
+  background-color: $em-toggle-bg;
+  color: $em-toggle-color;
+  border: 1px solid;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+
+  &:before {
+    color: $em-toggle-color2;
+  }
+}

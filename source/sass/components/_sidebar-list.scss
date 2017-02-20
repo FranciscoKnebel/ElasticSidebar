@@ -1,0 +1,14 @@
+ul {
+	list-style-type: none;
+	width: 100%;
+	height: 100%;
+	display: block;
+	margin: 0;
+	padding: 0;
+	visibility: hidden;
+	left: -10em;
+	position: relative;
+	transition: visibility 1s ease-in-out, left .5s ease-out;
+
+	@import "list/_item.scss";
+}

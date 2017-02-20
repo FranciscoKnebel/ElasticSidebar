@@ -6,8 +6,8 @@ This is an evolving elastic sidebar menu implementation. You can preview it [her
 
 
 ### Example GIFs
-![Sidebar Button](gif/sidebarButton.gif)
-![Menu Item](gif/menuItem.gif)
+![Sidebar Button](docs/gif/sidebarButton.gif)
+![Menu Item](docs/gif/menuItem.gif)
 
 ---
 ## Contributing

@@ -7,3 +7,4 @@ gulp.task('default', callback => plugins.runSequence('build', callback));
 
 require('./tasks/clean')(gulp, plugins);
 require('./tasks/build')(gulp, plugins);
+require('./tasks/minify')(gulp, plugins);

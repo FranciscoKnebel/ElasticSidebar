@@ -1,0 +1,13 @@
+span {
+	position: relative;
+	left: -10em;
+	padding-left: 0.5em;
+	font-size: 1.5em;
+	text-transform: uppercase;
+	color: $em-list-color;
+	font-weight: bold;
+	visibility: hidden;
+	display: inline-block;
+	opacity: 0;
+	transition: visibility 0.75s, opacity 1s cubic-bezier(0.42, 0, 0, 1), left 1s ease-out;
+}

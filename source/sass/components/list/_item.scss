@@ -1,0 +1,28 @@
+> li {
+	color: $em-list-color;
+	display: block;
+	list-style: none;
+	padding: 0.5em 0 0.5em 2em;
+	width: 2.5em;
+	height: 2em;
+	margin: 0;
+	transition: all 0.75s cubic-bezier(0.87, -0.31, 0.18, 1.08);
+	text-align: center;
+	white-space: nowrap;
+	border-style: solid;
+	border-width: 0 1px 0 0;
+	cursor: pointer;
+
+	&:first-child {
+		border-width: 1px 1px 0 0;
+	}
+
+	&:last-child {
+		border-width: 0 1px 1px 0;
+	}
+
+	@import "_item-span.scss";
+	@import "_item-hover.scss";
+	@import "_item-background.scss";
+	@import "_item-media.scss";
+}

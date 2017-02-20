@@ -4,22 +4,23 @@ module.exports = function minify(gulp, plugins) {
 	], callback));
 
 	gulp.task('minify-sass', () =>
-		gulp.src('source/sass/**/*.scss')
+		gulp.src('source/sass/*.scss')
 				.pipe(plugins.plumber())
 				.pipe(plugins.sassGlob())
 				.pipe(plugins.sass())
 				.on('error', plugins.util.log)
 				.pipe(plugins.autoprefixer({ browsers: ['last 2 versions'], cascade: false }))
 				.on('error', plugins.util.log)
-				.pipe(gulp.dest('dist/css'))
+				.pipe(plugins.jsbeautifier())
+				.on('error', plugins.util.log)
+				.pipe(gulp.dest('dist'))
 				.on('error', plugins.util.log)
 				.pipe(plugins.cssmin())
 				.on('error', plugins.util.log)
 				.pipe(plugins.rename({
 					suffix: '.min',
 				}))
-				.pipe(gulp.dest('dist/css'))
-				.pipe(plugins.browserSync.stream())
+				.pipe(gulp.dest('dist'))
 				.on('error', plugins.util.log)
 	);
 };
