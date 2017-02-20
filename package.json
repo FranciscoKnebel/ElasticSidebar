@@ -4,10 +4,12 @@
   "description": "Elastic Sidebar Menu implementation.",
   "main": "build.js",
   "scripts": {
-		"lint": "npm run lint-js",
-		"lint-js": "./node_modules/.bin/eslint source/**/*.js tasks/**/*.js",
-		"lint-js-fix": "./node_modules/.bin/eslint source/**/*.js tasks/**/*.js --fix",
+    "lint": "npm run lint-js && npm run lint-sass",
+    "lint-js": "./node_modules/.bin/eslint source/**/*.js tasks/**/*.js",
+    "lint-js-fix": "./node_modules/.bin/eslint source/**/*.js tasks/**/*.js --fix",
+    "lint-sass": "./node_modules/.bin/sass-lint -c .sass-lint.yml --verbose --max-warnings 10",
     "test": "npm run lint",
+    "precommit": "gulp build && git add dist/*.* docs/*.js docs/*.css",
     "prepush": "npm test"
   },
   "repository": {
@@ -36,6 +38,7 @@
     "gulp-gzip": "^1.4.0",
     "gulp-jsbeautifier": "^2.0.4",
     "gulp-load-plugins": "^1.4.0",
+    "gulp-optimize-js": "^1.1.0",
     "gulp-plumber": "^1.1.0",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.3.2",
@@ -50,6 +53,7 @@
     "eslint-plugin-import": "^1.16.0",
     "eslint-plugin-jsx-a11y": "^2.2.3",
     "eslint-plugin-react": "^6.4.1",
-    "husky": "^0.11.9"
+    "husky": "^0.11.9",
+    "sass-lint": "^1.10.2"
   }
 }

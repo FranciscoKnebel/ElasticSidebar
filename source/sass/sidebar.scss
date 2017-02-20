@@ -1,6 +1,6 @@
-@charset "utf-8";
+@charset 'utf-8';
 
-@import "helpers/**";
+@import 'helpers/**/_*';
 
 /// Components
-@import "components/_sidebar.scss";
+@import 'components/_sidebar';

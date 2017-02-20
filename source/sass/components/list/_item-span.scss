@@ -1,13 +1,16 @@
 span {
+	display: inline-block;
 	position: relative;
 	left: -10em;
-	padding-left: 0.5em;
-	font-size: 1.5em;
-	text-transform: uppercase;
+	padding-left: .5em;
+
+	transition: visibility .75s, opacity 1s cubic-bezier(.42, 0, 0, 1), left 1s ease-out;
 	color: $em-list-color;
+
+	font-size: 1.5em;
 	font-weight: bold;
-	visibility: hidden;
-	display: inline-block;
+	text-transform: uppercase;
+
 	opacity: 0;
-	transition: visibility 0.75s, opacity 1s cubic-bezier(0.42, 0, 0, 1), left 1s ease-out;
+	visibility: hidden;
 }

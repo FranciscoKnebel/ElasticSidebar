@@ -35,6 +35,7 @@ module.exports = function minify(gulp, plugins) {
 				}))
 				.pipe(gulp.dest('dist'))
 				.pipe(plugins.uglify())
+				.pipe(plugins.optimizeJs())
 				.pipe(plugins.rename({
 					suffix: '.min',
 				}))

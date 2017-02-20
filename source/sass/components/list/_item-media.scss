@@ -1,7 +1,7 @@
-@include media("<=tablet") {
+@include media('<=tablet') {
 	height: 2em;
 }
 
-@include media("<=phone") {
+@include media('<=phone') {
 	padding-left: 1.5em;
 }
