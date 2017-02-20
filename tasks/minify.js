@@ -1,6 +1,6 @@
 module.exports = function minify(gulp, plugins) {
 	gulp.task('minify', callback => plugins.runSequence([
-		'minify-sass',
+		'minify-sass', 'minify-js',
 	], callback));
 
 	gulp.task('minify-sass', () =>
@@ -9,7 +9,7 @@ module.exports = function minify(gulp, plugins) {
 				.pipe(plugins.sassGlob())
 				.pipe(plugins.sass())
 				.on('error', plugins.util.log)
-				.pipe(plugins.autoprefixer({ browsers: ['last 2 versions'], cascade: false }))
+				.pipe(plugins.autoprefixer({ browsers: ['last 10 versions'], cascade: false }))
 				.on('error', plugins.util.log)
 				.pipe(plugins.jsbeautifier())
 				.on('error', plugins.util.log)
@@ -20,9 +20,28 @@ module.exports = function minify(gulp, plugins) {
 				.pipe(plugins.rename({
 					suffix: '.min',
 				}))
+				.pipe(gulp.dest('docs'))
+				.pipe(gulp.dest('dist'))
+				.pipe(plugins.gzip())
 				.pipe(gulp.dest('dist'))
 				.on('error', plugins.util.log)
+	);
+
+	gulp.task('minify-js', () =>
+		gulp.src('source/js/**/*.js')
+				.pipe(plugins.plumber())
+				.pipe(plugins.babel({
+					presets: ['es2015'],
+				}))
+				.pipe(gulp.dest('dist'))
+				.pipe(plugins.uglify())
+				.pipe(plugins.rename({
+					suffix: '.min',
+				}))
 				.pipe(gulp.dest('docs'))
+				.pipe(gulp.dest('dist'))
+				.pipe(plugins.gzip())
+				.pipe(gulp.dest('dist'))
 				.on('error', plugins.util.log)
 	);
 };

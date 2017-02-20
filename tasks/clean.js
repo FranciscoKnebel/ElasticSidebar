@@ -3,5 +3,5 @@ module.exports = function clean(gulp, plugins) {
 		'clean-dist',
 	], callback));
 
-	gulp.task('clean-dist', () => gulp.src('dist/**/*.{js,css}', { read: false }).pipe(plugins.clean()));
+	gulp.task('clean-dist', () => gulp.src('dist/**/*.{js,css,gz}', { read: false }).pipe(plugins.clean()));
 };
