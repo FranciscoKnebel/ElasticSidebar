@@ -24,8 +24,8 @@
 		border-width: 0 1px 1px 0;
 	}
 
-	@import '_item-span';
-	@import '_item-hover';
-	@import '_item-background';
-	@import '_item-media';
+	@import 'item/_span';
+	@import 'item/_hover';
+	@import 'item/_background';
+	@import 'item/_media';
 }

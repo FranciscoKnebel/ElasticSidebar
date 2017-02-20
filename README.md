@@ -1,5 +1,6 @@
-# ElasticSidebar
-
+# Elastic Sidebar
+[![Build Status](https://travis-ci.org/FranciscoKnebel/ElasticSidebar.svg?branch=master)](https://travis-ci.org/FranciscoKnebel/ElasticSidebar)
+[![Issues](https://img.shields.io/github/issues-raw/FranciscoKnebel/ElasticSidebar.svg?style=flat-square)](https://github.com/FranciscoKnebel/ElasticSidebar/issues)
 [![license](https://img.shields.io/github/license/FranciscoKnebel/ElasticSidebar.svg?style=flat-square)](https://github.com/FranciscoKnebel/ElasticSidebar/blob/master/LICENSE)
 
 This is an evolving elastic sidebar menu implementation. You can preview it [here](https://franciscoknebel.github.io/ElasticSidebar).
