@@ -22,5 +22,7 @@ module.exports = function minify(gulp, plugins) {
 				}))
 				.pipe(gulp.dest('dist'))
 				.on('error', plugins.util.log)
+				.pipe(gulp.dest('docs'))
+				.on('error', plugins.util.log)
 	);
 };
