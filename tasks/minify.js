@@ -4,7 +4,7 @@ module.exports = function minify(gulp, plugins) {
 	], callback));
 
 	gulp.task('minify-sass', () =>
-		gulp.src('source/sass/*.scss')
+		gulp.src('src/sass/*.scss')
 				.pipe(plugins.plumber())
 				.pipe(plugins.sassGlob())
 				.pipe(plugins.sass())
@@ -28,7 +28,7 @@ module.exports = function minify(gulp, plugins) {
 	);
 
 	gulp.task('minify-js', () =>
-		gulp.src('source/js/**/*.js')
+		gulp.src('src/js/**/*.js')
 				.pipe(plugins.plumber())
 				.pipe(plugins.babel({
 					presets: ['es2015'],

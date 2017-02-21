@@ -5,8 +5,8 @@
   "main": "build.js",
   "scripts": {
     "lint": "npm run lint-js && npm run lint-sass",
-    "lint-js": "./node_modules/.bin/eslint source/**/*.js tasks/**/*.js",
-    "lint-js-fix": "./node_modules/.bin/eslint source/**/*.js tasks/**/*.js --fix",
+    "lint-js": "./node_modules/.bin/eslint src/**/*.js tasks/**/*.js",
+    "lint-js-fix": "./node_modules/.bin/eslint src/**/*.js tasks/**/*.js --fix",
     "lint-sass": "./node_modules/.bin/sass-lint -c .sass-lint.yml --verbose --max-warnings 10",
     "test": "npm run lint",
     "precommit": "gulp build && git add dist/*.* docs/*.js docs/*.css",
