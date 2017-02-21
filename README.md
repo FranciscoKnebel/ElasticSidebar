@@ -1,4 +1,6 @@
 # Elastic Sidebar
+[![NPM version](https://badge.fury.io/js/elasticsidebar.svg)](https://www.npmjs.com/package/elasticsidebar)
+[![NPM downloads](https://img.shields.io/npm/dt/elasticsidebar.svg?style=flat-square)](https://www.npmjs.com/package/elasticsidebar)
 [![Build Status](https://travis-ci.org/FranciscoKnebel/ElasticSidebar.svg?branch=master)](https://travis-ci.org/FranciscoKnebel/ElasticSidebar)
 [![Issues](https://img.shields.io/github/issues-raw/FranciscoKnebel/ElasticSidebar.svg?style=flat-square)](https://github.com/FranciscoKnebel/ElasticSidebar/issues)
 [![license](https://img.shields.io/github/license/FranciscoKnebel/ElasticSidebar.svg?style=flat-square)](https://github.com/FranciscoKnebel/ElasticSidebar/blob/master/LICENSE)

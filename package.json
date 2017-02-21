@@ -1,6 +1,6 @@
 {
   "name": "elasticsidebar",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Elastic Sidebar Menu implementation.",
   "main": "build.js",
   "scripts": {
