@@ -40,7 +40,7 @@ Include in your page the [sidebar.css](https://raw.githubusercontent.com/Francis
 
 //fa, fa-bars and fa-1x are Font Awesome defined classes.
 ```
-*If you don't know [Font Awesome](http://fontawesome.io/), check them out [here]([Font Awesome](http://fontawesome.io/).*
+*If you don't know [Font Awesome](http://fontawesome.io/), check them out [here](http://fontawesome.io/).*
 
 ##### Menu Items
    OK, so now that we have the sidebar element and our toogle button, we can add our menu items. All you need is an **unordered list** `<ul>` and multiple **list items** `<li>`. Each list item will be a single menu item.
